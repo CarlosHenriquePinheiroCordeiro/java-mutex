@@ -24,16 +24,16 @@ public class Contador {
 	 * @return
 	 */
 	public int incremento() {
-		System.out.println("Iniciando tranca: "+Thread.currentThread());
+		System.out.println("Iniciando tranca: "+Thread.currentThread().getName());
 		lock.bloquear();
 		
-		System.out.println("Trancado: "+Thread.currentThread());
+		System.out.println("Trancado: "+Thread.currentThread().getName());
 		int novoContador = ++contador;
 		
-		System.out.println("Incrementando: "+Thread.currentThread());
+		System.out.println("Incrementando: "+Thread.currentThread().getName());
 		lock.desbloquear();
 		
-		System.out.println("Destrancado: "+Thread.currentThread());
+		System.out.println("Destrancado: "+Thread.currentThread().getName());
 		
 		return novoContador;
 	}
@@ -43,16 +43,16 @@ public class Contador {
 	 * @return
 	 */
 	public int decremento() {
-		System.out.println("Iniciando tranca: "+Thread.currentThread());
+		System.out.println("Iniciando tranca: "+Thread.currentThread().getName());
 		lock.bloquear();
 		
-		System.out.println("Trancado: "+Thread.currentThread());
+		System.out.println("Trancado: "+Thread.currentThread().getName());
 		int novoContador = --contador;
 		
-		System.out.println("Decrementando: "+Thread.currentThread());
+		System.out.println("Decrementando: "+Thread.currentThread().getName());
 		lock.desbloquear();
 		
-		System.out.println("Destrancado: "+Thread.currentThread());
+		System.out.println("Destrancado: "+Thread.currentThread().getName());
 		
 		return novoContador;
 	}

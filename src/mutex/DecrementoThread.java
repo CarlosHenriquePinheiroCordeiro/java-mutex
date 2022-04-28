@@ -19,7 +19,7 @@ final private Contador contador;
 	/**
 	 * Executa o incremento
 	 */
-	public void executar() {
+	public void run() {
 		contador.decremento();
 	}
 	

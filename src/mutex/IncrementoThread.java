@@ -19,7 +19,7 @@ public class IncrementoThread extends Thread {
 	/**
 	 * Executa o incremento
 	 */
-	public void executar() {
+	public void run() {
 		contador.incremento();
 	}
 	
