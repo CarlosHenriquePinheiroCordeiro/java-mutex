@@ -1,4 +1,4 @@
-package java.mutex;
+package mutex;
 
 /**
  * Exemplo de implementação que utilizará o Lock, um simples contador

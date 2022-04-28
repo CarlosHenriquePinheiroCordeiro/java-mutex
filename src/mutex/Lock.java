@@ -1,4 +1,4 @@
-package java.mutex;
+package mutex;
 
 /**
  * Classe que contém o Lock e o Unlock das Threads, ligando ou desligando a seção crítica da thread em questão
